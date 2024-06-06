@@ -14,3 +14,6 @@ class Museum:
             self.check_for_dinosaur(dinosaur)
         else:
             return True
+
+    def number_of_dinosaurs(self) -> int:
+        return self.dinosaurs.__sizeof__()

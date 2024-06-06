@@ -29,6 +29,11 @@ class MuseumTest(unittest.TestCase):
         updated_museum = museum.get_dinosaurs()
         self.assertTrue(updated_museum.__contains__(triceratops))
 
+    def test_number_of_dinosaurs(self):
+        test_museum = Museum([tyrannosaurus, triceratops])
+        number_of_dinos = test_museum.number_of_dinosaurs()
+        self.assertTrue(number_of_dinos == 2)
+
 
 if __name__ == '__main__':
     unittest.main()
